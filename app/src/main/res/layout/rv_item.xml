@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    app:cardCornerRadius="25dp"
+    android:layout_margin="5dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorcream">
+
+        <ImageView
+            android:id="@+id/logo_jur"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Nama Jurusan :"
+            android:textStyle="bold"
+            android:textColor="@color/colorblack"
+            android:textSize="8pt"
+            app:layout_constraintStart_toEndOf="@+id/logo_jur"
+            app:layout_constraintTop_toTopOf="@+id/logo_jur" />
+
+        <TextView
+            android:id="@+id/nama_jur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="nama jurusan"
+            android:textColor="@color/colorblack"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        </TextView>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorblack"
+        android:text="Kaprog :"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        app:layout_constraintStart_toStartOf="@+id/nama_jur"
+        app:layout_constraintTop_toBottomOf="@+id/nama_jur" />
+
+        <TextView
+            android:id="@+id/kaprog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="kaprog"
+            android:textColor="@color/colorblack"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
